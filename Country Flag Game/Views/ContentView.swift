@@ -8,14 +8,28 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var gameManager = GameManager()
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
+        NavigationView {
+            VStack(spacing: 40, content: {
+                VStack(spacing: 20, content: {
+                   Text("Country Flag Game")
+                        .font(.title)
+                        .fontWeight(.heavy)
+                        .foregroundColor(.yellow)
+                    Text("Ready to test your skillz?")
+                        .foregroundColor(.yellow)
+                })
+                NavigationLink {
+                    QuestionView()
+                        .environmentObject(gameManager)
+                } label: {
+                    CustomButton(text: "Start")
+                }
+             })
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .ignoresSafeArea(.all)
+            .background(.cyan)
     }
 }
 
@@ -24,3 +38,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+            }
