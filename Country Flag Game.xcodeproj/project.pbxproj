@@ -65,8 +65,9 @@
 		CD82220C2B4D9F390096383E /* Country Flag Game */ = {
 			isa = PBXGroup;
 			children = (
-				CD82221C2B4DA48D0096383E /* Components */,
+				CD82220D2B4D9F390096383E /* Country_Flag_GameApp.swift */,
 				CD82221B2B4DA4450096383E /* Views */,
+				CD82221C2B4DA48D0096383E /* Components */,
 				CD82221D2B4DA4A80096383E /* Models */,
 				CD8222112B4D9F3D0096383E /* Assets.xcassets */,
 				CD8222132B4D9F3D0096383E /* Preview Content */,
@@ -85,10 +86,8 @@
 		CD82221B2B4DA4450096383E /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				CD82220D2B4D9F390096383E /* Country_Flag_GameApp.swift */,
 				CD82220F2B4D9F390096383E /* ContentView.swift */,
 				CD8222262B5040960096383E /* QuestionView.swift */,
-				CD8222302B582B730096383E /* GameManager.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -107,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				CD82221E2B4DA62C0096383E /* Questions.swift */,
+				CD8222302B582B730096383E /* GameManager.swift */,
 				CD82222A2B5045330096383E /* Data.swift */,
 			);
 			path = Models;

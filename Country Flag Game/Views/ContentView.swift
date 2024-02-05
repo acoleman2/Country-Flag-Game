@@ -13,7 +13,7 @@ struct ContentView: View {
         NavigationView {
             VStack(spacing: 40, content: {
                 VStack(spacing: 20, content: {
-                   Text("Country Flag Game")
+                    Text("Country Flag Game")
                         .font(.title)
                         .fontWeight(.heavy)
                         .foregroundColor(.yellow)
@@ -26,10 +26,11 @@ struct ContentView: View {
                 } label: {
                     CustomButton(text: "Start")
                 }
-             })
+            })
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .ignoresSafeArea(.all)
             .background(.cyan)
+        }
     }
 }
 
@@ -38,4 +39,5 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
-            }
+
+
